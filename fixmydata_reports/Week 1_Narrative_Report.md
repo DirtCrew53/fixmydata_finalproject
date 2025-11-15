@@ -1,7 +1,7 @@
 📘 WEEK 1 — NARRATIVE PROGRESS REPORT
-Project Title: fixmydata — A Python Library for Data Cleaning
-Course: DS211 — Object-Oriented Programming
-Group Members: Johann Lloyd Megalbio, Albrien Dealino, Shawn Sillote, Rafael Calingin
+# Project Title: fixmydata — A Python Library for Data Cleaning
+# Course: DS211 — Object-Oriented Programming
+## Group Members: Johann Lloyd Megalbio, Albrien Dealino, Shawn Sillote, Rafael Calingin
 
 # Introduction
 
