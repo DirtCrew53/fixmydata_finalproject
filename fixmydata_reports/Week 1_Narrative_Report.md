@@ -1,126 +1,50 @@
-1. Project Overview
+---
 
-Our group is developing fixmydata, a Python library focused on simplifying data cleaning tasks for data science workflows. The goal of this project is to provide an object-oriented, easy-to-use toolkit that helps users automatically clean, validate, and prepare tabular datasets before analysis.
+title: "FixMyData: A Python Library for Data Cleaning"
+author: "Group Project Report"
+date: "2025-11-15"
+output:
+html_document: default
+pdf_document: default
+---------------------
 
-The library applies the four core OOP principles:
+# Introduction
 
-Encapsulation – using protected attributes such as _df and providing safe access through methods and properties.
+The **FixMyData** project focuses on designing and developing a Python library dedicated to data cleaning. The primary goal is to apply Object-Oriented Programming (OOP) principles to address common data preprocessing challenges such as handling missing values, removing duplicates, detecting outliers, and validating dataset quality. This project also reinforces teamwork, documentation, version control, and collaborative software development.
 
-Abstraction – exposing only simplified interfaces for cleaning while hiding internal implementation details.
+# Objectives of the Week
 
-Inheritance – extending base classes such as StatsEngine with child classes like CorrelationEngine.
+* Understand and outline the structure of the FixMyData Python library.
+* Apply OOP concepts including abstraction, encapsulation, inheritance, and polymorphism.
+* Implement core classes such as `DataCleaner`, `DataValidator`, `StatsEngine`, and `CorrelationEngine`.
+* Draft project documentation and UML diagrams.
+* Collaborate effectively through GitHub for version control.
+* Conduct testing and basic packaging preparation.
 
-Polymorphism – method overriding (e.g., child class modifies parent behavior).
+# Narrative of Activities
 
-The project will follow the required structure of a Python package, later published on PyPI during Week 5.
+Throughout the week, the group collaborated to finalize the architecture of the library. We defined the relationships between classes and identified necessary methods and attributes for each component. Additionally, we drafted the UML diagram prompt, prepared documentation, and assigned roles to ensure balanced contribution.
 
-2. Chosen Library Focus
+The team also performed pair programming sessions to implement class structures, debug potential issues, and ensure the codebase adhered to best practices. By the end of the week, we had a fully drafted library structure and accompanying documentation.
 
-After group discussion, we selected the category Data Cleaning because:
+# Challenges Encountered
 
-It directly matches the name fixmydata, which implies repairing or improving data quality.
+* Determining clear class responsibilities to avoid overlapping functionalities.
+* Ensuring consistent naming conventions and coding styles across contributors.
+* Understanding abstract classes and designing appropriate method overrides.
+* Managing local and remote Git repository changes during simultaneous edits.
 
-It is widely needed in almost every data science workflow.
+# Reflection and Learning
 
-It provides clear opportunities for applying OOP design, especially abstraction and inheritance.
+The project strengthened our understanding of how OOP principles enhance code organization, scalability, and maintainability. We also developed a deeper appreciation for collaborative tools such as GitHub and documentation practices that support professional software development.
 
-The scope is wide enough for 5 weeks of development, yet manageable for group collaboration.
+Working on data cleaning as a core theme also highlighted the importance of preprocessing in data science workflows, reinforcing that clean and validated data is foundational for meaningful analysis.
 
-3. Planned Features (Week 1 Requirements)
+# Roles and Task Assignments
 
-We identified five core features that will be implemented throughout the project:
-
-Handle Missing Values
-
-Functions to drop missing rows or fill them with user-defined values.
-
-Remove Duplicates
-
-Automatically delete duplicate entries to improve data integrity.
-
-Detect Outliers
-
-Identify extreme numeric values using IQR or z-score methods.
-
-Normalize Columns
-
-Scale numeric features either to 0–1 or standardized distribution.
-
-Data Quality Summary
-
-Provide counts and percentages of missing values, duplicates, and outliers.
-
-These features will be distributed across different classes such as DataCleaner, DataValidator, and StatsEngine.
-
-4. Class Design (UML Summary)
-
-For Week 1, the team drafted a UML class diagram showcasing the structure of the fixmydata library using abstraction and inheritance:
-
-DataCleaner – main class holding the dataset and performing cleaning operations.
-
-DataValidator – abstract dependency used to check data conditions (missing values, numeric validation, etc.).
-
-StatsEngine – parent class for computing basic statistical summaries.
-
-CorrelationEngine – child class overriding methods for specialized statistical analysis.
-
-Visualizer – uses abstraction to create plots using any object with a .df attribute.
-
-The UML diagram illustrates the relationships:
-
-DataCleaner → DataValidator (dependency via abstraction)
-
-StatsEngine → CorrelationEngine (inheritance)
-
-Visualizer → DataCleaner/StatsEngine (dependency through abstraction)
-
-The diagram will be refined in Week 2 once more methods are implemented.
-
-5. Group Meeting Summary
-
-Date: Week 1
-Mode: Online meeting (Messenger/Google Classroom)
-
-Discussion Highlights
-
-Agreed on selecting Data Cleaning as the library focus.
-
-Reviewed Week 1 requirements and assigned tasks.
-
-Finalized the 3–5 features required for the library.
-
-Drafted the initial UML diagram and discussed OOP applications.
-
-Set up the GitHub repository and assigned roles such as coder, documenter, and reviewer.
-
-Task Assignments :
-
-Leader: Johann Lloyd Megalbio
-
-Design & UML: Albrien Dealino
-
-Core Class Coding: Johann Lloyd Megalbio
-
-Documentation & README: Shawn B. Sillote
-
-Testing & Demo Script: Rafael Calingin
-
-6. Plans for Week 2
-
-In the next development phase, the group will:
-
-Implement the main classes (DataCleaner, DataValidator, StatsEngine)
-
-Apply encapsulation using protected attributes
-
-Begin writing docstrings
-
-ensure early testing of cleaning methods
-
-Update GitHub repo with initial codebase
-
-We will also refine the UML diagram with class relationships and method lists.
-
-7. Conclusion
-
-Week 1 focused on establishing the foundation for the fixmydata library. The team successfully decided on the project concept, identified key features, created an OOP-based class structure, drafted a UML diagram, and organized workflow roles. This strong start will guide the development work in Weeks 2–5 as we gradually build a functional and publishable Python library
+| Member   | Role               | Responsibilities                                                   |
+| -------- | ------------------ | ------------------------------------------------------------------ |
+| Johann Lloyd Megalbio | Project Lead       | Oversees project direction, reviews code, manages deadlines        |
+| Rafael Calingin | Developer          | Implements core classes (`DataCleaner`, `DataValidator`)           |
+| Albrien Dealino| Developer          | Implements analytical classes (`StatsEngine`, `CorrelationEngine`) |
+| Shawn Sillote | Documentation & QA | Prepares documentation, testing, and packaging structure           |
