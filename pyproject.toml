@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "A Python library for data cleaning"
 readme = "README.md"
 authors = [
-  { name="Johann Lloyd Megalbio", email="your_email@example.com" }
+  { name="Johann Lloyd Megalbio, Albrien Dealino, Shawn B. Sillote, Rafael John Calingin" email="megalbio.johann@gmail.com, " }
 ]
 license = { text="MIT" }
 requires-python = ">=3.8"
