@@ -16,4 +16,5 @@ dependencies = []
 keywords = ["data-cleaning", "data-science", "cleaning"]
 
 [project.urls]
-"Repository" = "https://github.com/DirtCrew53/fixmydata_finalproject"
+Repository = "https://github.com/DirtCrew53/fixmydata_finalproject"
+Homepage = "https://github.com/DirtCrew53/fixmydata_finalproject"
